@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8b2eee1f.css",
+    "main.js": "/static/js/main.f5fc5099.js",
+    "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
+    "static/media/MovieSearchVid.mp4": "/static/media/MovieSearchVid.e1cec44084f2295ab797.mp4",
+    "static/media/FinnPlaceholder.jpg": "/static/media/FinnPlaceholder.fd5c002f7ae83f55f081.jpg",
+    "static/media/OthelloGif.mp4": "/static/media/OthelloGif.6375d932066811573cad.mp4",
+    "static/media/OldPortfolio.mp4": "/static/media/OldPortfolio.1706b365ec236637a372.mp4",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.8b2eee1f.css.map": "/static/css/main.8b2eee1f.css.map",
+    "main.f5fc5099.js.map": "/static/js/main.f5fc5099.js.map",
+    "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b2eee1f.css",
+    "static/js/main.f5fc5099.js"
+  ]
+}
