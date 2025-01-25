@@ -1,0 +1,58 @@
+.experience {
+    padding: 40px;
+    background-color: #f4f4f4;
+    margin: 5px;
+  }
+  
+  .experience h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .experience-item {
+    padding: 20px;
+    background-color: #0f3c1358;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+  }
+  
+  .experience-date {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .experience-description {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 50px;
+    margin-top: 15px;
+    padding: 0 20px;
+    
+  }
+  .tech-icons > * {
+    flex: 0 1 20%;              /* Set each icon to take up 20% of the width (adjustable) */
+    text-align: center;         /* Center align the content */
+  }
+  
+  .tech-icons svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .tech-icons svg:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+  }
+  

@@ -1,0 +1,96 @@
+.projects {
+  padding: 40px;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Ensure nothing spills out */
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: inherit;
+}
+
+.project-item {
+  text-align: center;
+  padding: 40px; /* Increase padding for more space inside the card */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Spread items with space in between */
+  align-items: center;
+  max-height: 600px; /* Increase height for more vertical space */
+  height: auto;
+  width: 100%; /* Ensure it uses the full width of the slide */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.project-media {
+  max-width: 350px;              /* Ensure the image doesn't exceed the container width */
+  height: 350px;
+  max-height: 600px;            /* Cap the height to 200px */
+  object-fit: cover;            /* Make sure the image covers the space without distortion */
+  object-position: center;      /* Center the image inside its container */
+  border-radius: 8px;           /* Rounded corners */
+  display: block;               /* Ensures no extra spacing (images are inline by default) */
+  margin: 0 auto;               /* Centering for good measure */
+}
+
+.project-media.video {
+  width: 200px;         /* Ensure the video fills the width of its container */
+  height: 300px;   /* Increase the height of the video */
+  border-radius: 8px;  /* Keep the rounded corners */
+  object-fit: cover;   /* Maintain aspect ratio without distortion */
+  object-position: center;
+}
+
+
+.project-item h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.project-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.project-item a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #103118;
+}
+
+.project-item a:hover {
+  background-color: #6d0707d1;
+}
+
+.slick-dots {
+  bottom: -30px; /* Adjust the position of the dots */
+}
+
+.slick-dots li button:before {
+  font-size: 20px; /* Increase the dot size */
+  color: #0f3c13a6;  /* Set the color of the dots */
+  opacity: 1;      /* Ensure that the dots are fully visible */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0b0b0b;  /* Set a different color for the active dot (optional) */
+  font-size: 15px; /* Increase the size of the active dot */
+}
+
+.slick-slide {
+  padding: 0 10px; /* Add spacing between slides */
+  box-sizing: border-box;
+}
