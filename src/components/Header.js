@@ -18,13 +18,13 @@ const Header = () => {
       />
     <h4>Front-end developer who builds engaging, user-friendly web experiences</h4>
     {/* add resume button */}
-    <a 
+    {/* <a 
           href="/resume.pdf"  // Link to the resume PDF
           download="Emma_Johnson_Resume.pdf"  // Specify the download name
           className="download-button"
         >
           <b>View Resume</b>
-        </a>
+        </a> */}
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
