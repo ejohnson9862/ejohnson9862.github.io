@@ -3,7 +3,6 @@ import './Experience.css';
 import { FaDocker, FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaDatabase, FaNpm, FaGithub } from 'react-icons/fa'; 
 import { SiPostman, SiNextdotjs, SiAmazonwebservices, SiPostgresql, SiFirebase, SiExpress, SiJest } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { TbBrandOauth } from "react-icons/tb";
 import { GrGraphQl } from "react-icons/gr";
 import Tooltip from './Tooltip'; // Import Tooltip component
 

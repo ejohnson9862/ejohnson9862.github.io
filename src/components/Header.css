@@ -1,33 +1,40 @@
 
 .header {
-    display: flex;
-    flex-direction: column;  /* Stack elements vertically */
-    align-items: center; 
-    background-color: transparent;
-    color: rgb(4, 4, 4);
-    padding: 20px;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically */
+  align-items: center;     /* Center elements horizontally */
+  justify-content: flex-start; /* Align items at the top with minimal space */
+  background-color: transparent;
+  color: rgb(4, 4, 4);
+  padding: 20px;  /* Reduced padding for less space */
+  height: auto;   /* Allow height to adjust based on content */
+  text-align: center;
+}
+
   
   .header h2 {
-    margin: 3px;
-    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    font-size: 70px;
     color: #0f3c13a6;
     font-family: cursive;
   }
   .header h4 {
-    font-size: 20px;
+    font-size: 15px;
     color: #0f3c13a6;
     margin: 3px;
+    margin-bottom: 100px;
+    margin-top: 20px;
   }
   
   .header p {
     margin: 3px;
-    font-size: 30px;
+    font-size: 40px;
+    margin-bottom: 10px;
   }
   .header-image {
-    width: 200px; /* Adjust the size of the image */
-    height: 200px; /* Ensure it's a square */
+    width: 300px; /* Adjust the size of the image */
+    height: 300px; /* Ensure it's a square */
     border-radius: 50%; /* Make it a circle */
     object-fit: cover; /* Ensures the image covers the space without distortion */
     margin-top: 20px;
