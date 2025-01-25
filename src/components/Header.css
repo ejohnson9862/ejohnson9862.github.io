@@ -10,14 +10,19 @@
   }
   
   .header h2 {
-    margin: 5px;
-    font-size: 30px;
+    margin: 3px;
+    font-size: 50px;
     color: #0f3c13a6;
+    font-family: cursive;
+  }
+  .header h4 {
+    font-size: 20px;
+    color: #0f3c13a6;
+    margin: 3px;
   }
   
   .header p {
-    margin: 5px;
-    font-family: cursive;
+    margin: 3px;
     font-size: 30px;
   }
   .header-image {

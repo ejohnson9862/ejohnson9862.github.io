@@ -68,6 +68,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2>Contact Me</h2>
+      
 
       {/* Form Section */}
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -110,6 +111,9 @@ const Contact = () => {
 
       {/* Social Media Links */}
       <div className="contact-social">
+       <a href="/resume.pdf" download="Emma_Johnson_Resume.pdf">
+          Resume
+        </a> 
         <a href="https://github.com/ejohnson9862" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
@@ -119,6 +123,8 @@ const Contact = () => {
         <a href="mailto:emma.a.johnson9862@gmail.com" target="_blank" rel="noopener noreferrer">
           Email
         </a>
+        
+        
       </div>
     </section>
   );
