@@ -1,27 +1,49 @@
-/* src/components/About.css */
 .about {
-    padding: 40px;
-    background-color: #0f3c1358;
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #000; /* Adds a solid black line underneath */
-    padding-bottom: 5px;
-    max-width: 500px;              /* Sets a maximum width */
-    margin: 0 auto;                /* Centers the element */
-  }
-  
+  padding: 40px;
+  background-color: #0f3c1358;
+  text-align: center;
+}
 
-  
-  
-  .about p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 15px auto 16px;
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; /* Increase the gap between image and text */
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row; /* Side-by-side layout for larger screens */
+    justify-content: center;
   }
-  
+}
+
+.about-image {
+  width: auto; /* Maintain the aspect ratio */
+  max-height: 400px; /* Portrait height */
+  object-fit: cover; /* Ensures the image fits well */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+.about-text {
+  max-width: 800px;
+  text-align: center;
+  padding: 0 20px; /* Optional: Adds some padding around text */
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 15px 0;
+}
