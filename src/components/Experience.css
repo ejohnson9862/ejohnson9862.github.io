@@ -133,7 +133,7 @@
   }
 
   .tech-icons > *, .tech-icons-be > * {
-    flex: 0 1 25%;  /* Allow each icon to take up 25% of the width */
+    flex: 0 1 45%;  /* Allow each icon to take up 25% of the width */
   }
 }
 
@@ -169,6 +169,6 @@
   }
 
   .tech-icons > *, .tech-icons-be > * {
-    flex: 0 1 40%;  /* Stack icons more efficiently */
+    flex: 0 1 100%;  /* Stack icons more efficiently */
   }
 }
