@@ -111,9 +111,9 @@ const Contact = () => {
 
       {/* Social Media Links */}
       <div className="contact-social">
-       <a href="/resume.pdf" download="Emma_Johnson_Resume.pdf">
+      <a href="/resume.pdf" download="Emma_Johnson_Resume.pdf">
           Resume
-        </a> 
+        </a>
         <a href="https://github.com/ejohnson9862" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
