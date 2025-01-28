@@ -85,6 +85,7 @@
   margin-top: 15px;
   padding: 0 20px;
   white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 .tech-icons-be > * {
