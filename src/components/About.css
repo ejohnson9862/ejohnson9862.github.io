@@ -1,6 +1,6 @@
 .about {
   padding: 40px;
-  background-color: #0f3c1358;
+  background-color: hsla(31, 23%, 37%, 0.187);
   text-align: center;
 }
 
@@ -33,7 +33,10 @@
   max-height: 400px; /* Portrait height */
   object-fit: cover; /* Ensures the image fits well */
   border-radius: 8px; /* Slightly rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  box-shadow: 0 4px 6px rgba(71, 70, 70, 0.354); /* Adds a shadow effect */
+}
+.about-image:hover {
+  box-shadow: 0 4px 15px rgba(19, 19, 19, 0.3); /* Adds a shadow on hover */
 }
 
 .about-text {

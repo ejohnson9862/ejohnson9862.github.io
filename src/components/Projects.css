@@ -1,6 +1,6 @@
 .projects {
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: hsla(31, 23%, 37%, 0.187);
   overflow: hidden; /* Ensure nothing spills out */
 }
 

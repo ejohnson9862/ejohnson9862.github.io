@@ -5,14 +5,16 @@ import logoEL from '../assets/images/logoEL.png';
 const Header = () => {
   return (
     <header className="header">
-      <h2>Hello!</h2>
-      <p>I'm <b>Emma Johnson</b></p>
       <img 
         src={logoEL}  
         alt="Emma Johnson"
         className="header-image"
       />
-    <h4>Front-end developer who builds engaging, user-friendly web experiences</h4>
+      <h2>Hello!</h2>
+      <p>I'm <b>Emma</b></p>
+      
+    <h4>I'm a front-end developer who builds</h4>
+      <h4>engaging, user-friendly web experiences</h4>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
