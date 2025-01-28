@@ -100,10 +100,13 @@
     }
     .contact-social {
       gap: 10px; /* Reduce gap between social icons */
+      justify-content: center;  /* Ensure the social links are centered */
     }
   
     .contact-social a {
-      font-size: 1.3rem; /* Adjust font size for smaller screens */
+      font-size: 1.2rem; /* Smaller font size on mobile */
+      width: auto; /* Ensure links do not stretch across */
+      text-align: center; /* Center the text within the link */
     }
   }
   
