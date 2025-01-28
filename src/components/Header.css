@@ -1,106 +1,91 @@
-
+/* Base styles for desktop and larger screens */
 .header {
   display: flex;
   flex-direction: column;  /* Stack elements vertically */
   align-items: center;     /* Center elements horizontally */
-  justify-content: flex-start; /* Align items at the top with minimal space */
+  justify-content: flex-start;
   background-color: transparent;
   color: rgb(4, 4, 4);
-  padding: 20px;  /* Reduced padding for less space */
-  height: auto;   /* Allow height to adjust based on content */
+  padding: 20px;
+  height: auto;
   text-align: center;
   margin-bottom: 10px;
 }
 
-  
-  .header h2 {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 70px;
-    color: #0f3c13a6;
-    font-family: cursive;
-  }
-  .header h4 {
-    font-size: 15px;
-    color: #0f3c13a6;
-    margin: 0;
-  }
-  
-  .header p {
-    margin-top: 0;
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
-  .header-image {
-    width: 300px; /* Adjust the size of the image */
-    height: 300px; /* Ensure it's a square */
-    border-radius: 50%; /* Make it a circle */
-    object-fit: cover; /* Ensures the image covers the space without distortion */
-    margin-top: 20px;
-    border: 5px solid #fff; /* Optional: Adds a border around the image */
-    transition: box-shadow 0.3s ease; /* Smooth transition */
+.header h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 70px;
+  color: #0f3c13a6;
+  font-family: cursive;
+}
+
+.header h4 {
+  font-size: 15px;
+  color: #0f3c13a6;
+  margin: 0;
+}
+
+.header p {
+  margin-top: 0;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.header-image {
+  width: 150px; /* Adjust the size for better proportion */
+  height: 150px; /* Ensure it's a square */
+  border-radius: 50%; /* Make it a circle */
+  object-fit: cover;
+  margin-top: 20px;
+  border: 5px solid #fff;
+  transition: box-shadow 0.3s ease;
 }
 
 .header-image:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-  nav {
-    position: fixed; /* Fixes the navbar in place */
-    top: 0; /* Position at the very top of the screen */
-    left: 0; /* Align to the left edge */
-    width: 100%; /* Take up the full width of the screen */
-    background-color: transparent; /* Dark background for the navbar */
-    z-index: 1000; /* Ensure it stays above other content */
-    padding: 10px 0;
-    transition: background-color 0.3s ease; /* Smooth transition for background on scroll */
-    background: linear-gradient(to right, rgba(239, 238, 238, 0) 0%, rgba(159, 165, 143, 0.3) 100%); /* this is for hazy background */
-  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+  background: linear-gradient(to right, rgba(239, 238, 238, 0) 0%, rgba(159, 165, 143, 0.3) 100%);
+}
 
-  .header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    display: flex;
-  }
-  
-  
-  .header nav ul li {
-    display: inline;
-    margin: 0 20px;
-  }
-  
-  .header nav ul li a {
-  display: inline-block; /* Make the <a> behave like a block element */
-  text-decoration: none; /* Remove underline from links */
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
   background: linear-gradient(135deg, #f9f8f987, #0f3c13a6);
-  color: rgb(6, 6, 6); /* White text color */
-  padding: 12px 25px; /* Add padding for button-like feel */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Make text bold */
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border-radius: 25px; /* Rounded corners */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .header nav ul li a:hover {
-    background-color: #ccd0cc; /* Darker green background */
-  transform: scale(1.1); /* Slightly enlarge the button */
-  
+  color: rgb(6, 6, 6);
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
-body {
-  padding-top: 60px; /* Adjust this value if your navbar height changes */
-}
-  
-.header-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image fits within the circle */
-  border: 3px solid white; /* Optional: adds a border around the image */
-  margin-top: 5px;
-  margin-bottom: 5px;
+
+.header nav ul li a:hover {
+  background-color: #ccd0cc;
+  transform: scale(1.1);
 }
 
 /* Button styling */
@@ -110,15 +95,94 @@ body {
   width: 70px;
   height: 30px;
   padding: 10px 20px;
-  background: linear-gradient(135deg, #f9f8f987, #0f3c13a6); /* Blue color */
+  background: linear-gradient(135deg, #f9f8f987, #0f3c13a6);
   color: rgb(0, 0, 0);
   border-radius: 25px;
   font-size: 15px;
   text-align: center;
   transition: background-color 0.3s ease;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .download-button:hover {
-  background-color: #6d0707d1; /* Darker blue on hover */
+  background-color: #6d0707d1;
+}
+
+/* Body padding to account for fixed navbar */
+body {
+  padding-top: 60px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Adjust header text size for smaller screens */
+  .header h2 {
+    font-size: 50px;
+  }
+
+  .header p {
+    font-size: 30px;
+  }
+
+  .header h4 {
+    font-size: 14px;
+  }
+
+  .header-image {
+    width: 120px; /* Reduce image size on mobile */
+    height: 120px;
+  }
+
+  nav {
+    padding: 5px 0; /* Reduce padding in nav for mobile */
+  }
+
+  .header nav ul {
+    flex-direction: column; /* Stack links vertically on mobile */
+    gap: 10px; /* Add space between items */
+  }
+
+  .header nav ul li {
+    margin: 0; /* Remove side margin on mobile */
+  }
+
+  .header nav ul li a {
+    font-size: 14px; /* Adjust font size of nav links */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .download-button {
+    width: 100px; /* Adjust button size */
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce font sizes and image sizes for very small screens */
+  .header h2 {
+    font-size: 40px;
+  }
+
+  .header p {
+    font-size: 25px;
+  }
+
+  .header h4 {
+    font-size: 12px;
+  }
+
+  .header-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header nav ul li a {
+    font-size: 12px; /* Smaller font for mobile */
+    padding: 8px 18px; /* Less padding on small screens */
+  }
+
+  .download-button {
+    width: 90px; /* Adjust the button size further */
+    font-size: 12px;
+  }
 }

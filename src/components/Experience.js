@@ -12,22 +12,6 @@ const Experience = () => {
       <h2>Technical Skills</h2>
       <h3>Learn more about my background</h3>
       <h5>Hover for Proficiency Level</h5>
-      {/* <div className="experience-list">
-        
-        <div className="experience-item">
-          <h3>MIT xPRO's Professional Certificate in Coding: Full Stack Development with MERN</h3>
-          <p className="experience-date">March 2024 - October 2024</p>
-          <p className="experience-description">
-          Gained expertise in web development with the MERN stack (MongoDB, Express.js, React, Node.js). Developed full-stack applications, built and tested APIs, and deployed cloud-ready solutions.</p>
-          <h4>Key Highlights:</h4>
-            <ul>
-              <li>Built and deployed React-based applications with dynamic data handling and responsive design.</li>
-              <li>Created and tested APIs with MongoDB and Express.js for efficient data management.</li>
-              <li>Implemented modern deployment pipelines, using Docker, Postman, and Swagger.</li>
-              <li>Developed a professional GitHub portfolio, showcasing collaborative projects and version control skills.</li>
-            </ul>
-        </div> */}
-        
         <div className="experience-item">
           <div className="title">FrontEnd Development</div>
           <div className="tech-icons">

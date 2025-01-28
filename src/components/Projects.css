@@ -1,7 +1,7 @@
 .projects {
   padding: 40px;
   background-color: hsla(31, 23%, 37%, 0.187);
-  overflow: hidden; /* Ensure nothing spills out */
+  overflow: hidden;
 }
 
 .projects h2 {
@@ -13,40 +13,38 @@
 
 .project-item {
   text-align: center;
-  padding: 40px; /* Increase padding for more space inside the card */
+  padding: 40px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-around; /* Spread items with space in between */
+  justify-content: space-around;
   align-items: center;
-  max-height: 600px; /* Increase height for more vertical space */
+  max-height: 600px;
   height: auto;
-  width: 100%; /* Ensure it uses the full width of the slide */
+  width: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent content from spilling out */
+  overflow: hidden;
 }
 
 .project-media {
-  max-width: 350px;              /* Ensure the image doesn't exceed the container width */
+  max-width: 350px;
   height: 350px;
-  max-height: 600px;            /* Cap the height to 200px */
-  object-fit: cover;            /* Make sure the image covers the space without distortion */
-  object-position: center;      /* Center the image inside its container */
-  border-radius: 8px;           /* Rounded corners */
-  display: block;               /* Ensures no extra spacing (images are inline by default) */
-  margin: 0 auto;               /* Centering for good measure */
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
 
 .project-media.video {
-  width: 200px;         /* Ensure the video fills the width of its container */
-  height: 300px;   /* Increase the height of the video */
-  border-radius: 8px;  /* Keep the rounded corners */
-  object-fit: cover;   /* Maintain aspect ratio without distortion */
-  object-position: center;
+  width: 100%;
+  max-width: 350px;  /* Ensure videos are responsive */
+  height: auto;
+  border-radius: 8px;
 }
-
 
 .project-item h3 {
   font-size: 1.5rem;
@@ -76,21 +74,78 @@
 }
 
 .slick-dots {
-  bottom: -30px; /* Adjust the position of the dots */
+  bottom: -30px;
 }
 
 .slick-dots li button:before {
-  font-size: 20px; /* Increase the dot size */
-  color: #0f3c13a6;  /* Set the color of the dots */
-  opacity: 1;      /* Ensure that the dots are fully visible */
+  font-size: 20px;
+  color: #0f3c13a6;
+  opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #0b0b0b;  /* Set a different color for the active dot (optional) */
-  font-size: 15px; /* Increase the size of the active dot */
+  color: #0b0b0b;
+  font-size: 15px;
 }
 
 .slick-slide {
-  padding: 0 10px; /* Add spacing between slides */
+  padding: 0 10px;
   box-sizing: border-box;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .projects {
+    padding: 20px;
+  }
+
+  .slick-slider {
+    margin: 0 auto; /* Center the slider */
+  }
+
+  .project-item {
+    padding: 20px;
+  }
+
+  .project-media {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .project-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-item p {
+    font-size: 0.875rem;
+  }
+
+  /* Display only one slide on small screens */
+  .slick-slide {
+    width: 100%; /* Make each slide fill the screen */
+  }
+
+  .slick-dots {
+    bottom: -20px; /* Adjust the dots for smaller screens */
+  }
+}
+
+/* Extra small screens (phone) */
+@media (max-width: 480px) {
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-item h3 {
+    font-size: 1.125rem;
+  }
+
+  .project-item p {
+    font-size: 0.75rem;
+  }
+
+  .slick-dots {
+    bottom: -15px;
+  }
 }
