@@ -1,8 +1,7 @@
-/* Base styles for desktop and larger screens */
 .header {
   display: flex;
-  flex-direction: column;  /* Stack elements vertically */
-  align-items: center;     /* Center elements horizontally */
+  flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
   background-color: transparent;
   color: rgb(4, 4, 4);
@@ -33,12 +32,13 @@
 }
 
 .header-image {
-  width: 150px; /* Adjust the size for better proportion */
-  height: 150px; /* Ensure it's a square */
-  border-radius: 50%; /* Make it a circle */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-top: 20px;
-  border: 5px solid #fff;
+  border: 3px solid white;
+  margin-top: 5px;
+  margin-bottom: 5px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -46,6 +46,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Navbar Styling */
 nav {
   position: fixed;
   top: 0;
@@ -64,11 +65,13 @@ nav {
   margin: 0;
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;  /* Allows items to wrap if needed */
+  gap: 15px;        /* Adds some space between the items */
 }
 
 .header nav ul li {
   display: inline;
-  margin: 0 20px;
+  margin: 0;
 }
 
 .header nav ul li a {
@@ -79,6 +82,7 @@ nav {
   padding: 12px 25px;
   font-size: 16px;
   font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 25px;
   transition: all 0.3s ease;
 }
@@ -88,101 +92,19 @@ nav {
   transform: scale(1.1);
 }
 
-/* Button styling */
-.download-button {
-  display: flex;
-  margin-top: 10px;
-  width: 70px;
-  height: 30px;
-  padding: 10px 20px;
-  background: linear-gradient(135deg, #f9f8f987, #0f3c13a6);
-  color: rgb(0, 0, 0);
-  border-radius: 25px;
-  font-size: 15px;
-  text-align: center;
-  transition: background-color 0.3s ease;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.download-button:hover {
-  background-color: #6d0707d1;
-}
-
-/* Body padding to account for fixed navbar */
 body {
   padding-top: 60px;
 }
 
-/* Mobile Styles */
+/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
-  /* Adjust header text size for smaller screens */
-  .header h2 {
-    font-size: 50px;
-  }
-
-  .header p {
-    font-size: 30px;
-  }
-
-  .header h4 {
-    font-size: 14px;
-  }
-
-  .header-image {
-    width: 120px; /* Reduce image size on mobile */
-    height: 120px;
-  }
-
-  nav {
-    padding: 5px 0; /* Reduce padding in nav for mobile */
-  }
-
   .header nav ul {
-    flex-direction: column; /* Stack links vertically on mobile */
-    gap: 10px; /* Add space between items */
-  }
-
-  .header nav ul li {
-    margin: 0; /* Remove side margin on mobile */
+    flex-direction: row;  /* Ensure the items stay in a row */
+    justify-content: center;  /* Center the nav items */
   }
 
   .header nav ul li a {
-    font-size: 14px; /* Adjust font size of nav links */
-    padding: 10px 20px; /* Adjust padding for smaller screens */
-  }
-
-  .download-button {
-    width: 100px; /* Adjust button size */
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Further reduce font sizes and image sizes for very small screens */
-  .header h2 {
-    font-size: 40px;
-  }
-
-  .header p {
-    font-size: 25px;
-  }
-
-  .header h4 {
-    font-size: 12px;
-  }
-
-  .header-image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .header nav ul li a {
-    font-size: 12px; /* Smaller font for mobile */
-    padding: 8px 18px; /* Less padding on small screens */
-  }
-
-  .download-button {
-    width: 90px; /* Adjust the button size further */
-    font-size: 12px;
+    padding: 10px 20px;  /* Slightly smaller padding for mobile screens */
+    font-size: 14px;      /* Smaller font size for mobile screens */
   }
 }
