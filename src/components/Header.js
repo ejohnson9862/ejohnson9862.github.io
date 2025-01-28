@@ -13,7 +13,7 @@ const Header = () => {
       <h2>Hello!</h2>
       <p>I'm <b>Emma</b></p>
       
-    <h4>I'm a front-end developer who builds</h4>
+    <h4>A front-end developer who builds</h4>
       <h4>engaging, user-friendly web experiences</h4>
       <nav>
         <ul>
