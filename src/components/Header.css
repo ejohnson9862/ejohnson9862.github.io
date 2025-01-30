@@ -66,7 +66,7 @@ nav {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;  /* Allows items to wrap if needed */
-  gap: 15px;        /* Adds some space between the items */
+  gap: 60px;        /* Adds some space between the items */
 }
 
 .header nav ul li {
@@ -101,6 +101,7 @@ body {
   .header nav ul {
     flex-direction: row;  /* Ensure the items stay in a row */
     justify-content: center;  /* Center the nav items */
+    gap: 20px;
   }
 
   .header nav ul li a {

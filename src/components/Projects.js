@@ -22,21 +22,28 @@ const projects = [
   },
   {
     title: "Old Portfolio",
-    description: "In the journey of web development, growth is a constant. This old portfolio represents where I started—an early attempt to create something meaningful with limited knowledge. By comparing it with my current React portfolio, you can clearly see how far I've come.",
+    description: "In the journey of web development, growth is a constant. This old portfolio represents where I started. By comparing it with my current React portfolio, you can clearly see how far I've come.",
     mediaType: "video",
     mediaUrl: OldPortfolio,
     link: "https://github.com/ejohnson9862/EJ-Old-Portfolio.git"
   }
-  // Add more projects as needed
 ];
 
 const Project = () => {
   const settings = {
     dots: true,           // Shows dots for navigation
     infinite: true,       // Infinite loop (repeats the carousel)
-    speed: 500,           // Transition speed 
-    slidesToShow: 2,      
-    slidesToScroll: 1    
+    speed: 500,           
+    slidesToShow: 3,      
+    slidesToScroll: 1, 
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // Show 1 slide on mobile
+        },
+      },
+    ],   
   };
 
   return (
