@@ -1,7 +1,7 @@
 // src/components/About.js
 import React from 'react';
 import './About.css';
-import FinnPlaceholder from '../assets/images/FinnPlaceholder.jpg';
+import EJphoto from '../assets/images/EJphoto.jpg';
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
       <h2>About Me</h2>
       <div className="about-content">
         <img 
-          src={FinnPlaceholder}
+          src={EJphoto}
           alt="About Me" 
           className="about-image" 
         />
