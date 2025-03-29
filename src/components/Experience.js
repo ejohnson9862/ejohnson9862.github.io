@@ -1,7 +1,7 @@
 import React from 'react';
 import './Experience.css';
 import { FaDocker, FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaDatabase, FaNpm, FaGithub } from 'react-icons/fa'; 
-import { SiPostman, SiNextdotjs, SiAmazonwebservices, SiPostgresql, SiFirebase, SiExpress, SiJest } from "react-icons/si";
+import { SiNetlify, SiRender, SiPostman, SiNextdotjs, SiAmazonwebservices, SiPostgresql, SiFirebase, SiExpress, SiJest } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrGraphQl } from "react-icons/gr";
 import Tooltip from './Tooltip'; // Import Tooltip component
@@ -47,6 +47,10 @@ const Experience = () => {
               <RiTailwindCssFill size={40} />
               <div>Tailwind CSS</div>
             </Tooltip>
+            <Tooltip text="Proficient">
+              <SiNetlify size={40} />
+              <div>Netlify</div>
+            </Tooltip>
             
           </div>
         </div>
@@ -73,6 +77,10 @@ const Experience = () => {
             <Tooltip text="Proficient">
               <SiPostgresql size={40} />
               <div>PostgreSQL</div>
+            </Tooltip>
+            <Tooltip text="Proficient">
+              <SiRender size={40} />
+              <div>Render</div>
             </Tooltip>
           
           </div>
