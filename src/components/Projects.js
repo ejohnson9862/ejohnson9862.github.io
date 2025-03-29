@@ -5,7 +5,15 @@ import './Projects.css';
 import OthelloGif from '../assets/images/OthelloGif.mp4';
 import MovieSearchVid from '../assets/images/MovieSearchVid.mp4';
 import OldPortfolio from '../assets/images/OldPortfolio.mp4';
+import UrlShortener from '../assets/images/UrlShortener.mp4';
 const projects = [
+  {
+    title: "URL Shortener",
+    description: "A full-stack web app that shortens long URLs for easy sharing. Built with React, Node.js, and MongoDB, deployed on Netlify and Render. Users can shorten, copy, and share links effortlessly.",
+    mediaType: "video", 
+    mediaUrl: UrlShortener,
+    link: "https://incomparable-pixie-34dd0d.netlify.app/"
+  },
   {
     title: "Othello",
     description: "A classic strategy game recreated in React, featuring intuitive game logic, dynamic visuals, and smooth interactivity. Challenge yourself or a friend to master this timeless board game.",
@@ -60,7 +68,7 @@ const Project = () => {
             )}
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">Explore Project</a>
           </div>
         ))}
       </Slider>
